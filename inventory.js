@@ -13,9 +13,11 @@
  *     id: "couch-5",
  *     name: "Your Couch Name",
  *     price: 299,
+ *     retailPrice: 800,           // Optional: shows strikethrough "was" price
  *     image: "images/your-photo.jpg",
  *     dimensions: "80\" W × 36\" D × 32\" H",
  *     available: true,
+ *     quantity: 1,                // Shows "Only 1 available!" urgency badge
  *     deliveryNote: "Delivery available this week"
  * }
  * 
@@ -28,36 +30,44 @@ const COUCHES = [
         id: "couch-1",
         name: "Modern Gray Sectional",
         price: 450,
+        retailPrice: 1200,
         image: "images/couch-1.jpg",
         dimensions: '110" W × 85" D × 34" H',
         available: true,
+        quantity: 1,
         deliveryNote: "Delivery available this week"
     },
     {
         id: "couch-2",
         name: "Classic Brown Leather Sofa",
         price: 375,
+        retailPrice: 950,
         image: "images/couch-2.jpg",
         dimensions: '84" W × 38" D × 35" H',
         available: true,
+        quantity: 1,
         deliveryNote: "Delivery available this week"
     },
     {
         id: "couch-3",
         name: "Navy Blue Velvet Loveseat",
         price: 285,
+        retailPrice: 700,
         image: "images/couch-3.jpg",
         dimensions: '62" W × 34" D × 33" H',
         available: true,
+        quantity: 1,
         deliveryNote: "Delivery available this week"
     },
     {
         id: "couch-4",
         name: "Cozy Beige Fabric Sofa",
         price: 325,
+        retailPrice: 850,
         image: "images/couch-4.jpg",
         dimensions: '88" W × 40" D × 36" H',
         available: true,
+        quantity: 1,
         deliveryNote: "Delivery available this week"
     }
 

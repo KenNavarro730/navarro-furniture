@@ -57,14 +57,35 @@ function createCouchCard(couch) {
     const smsMessage = encodeURIComponent(`Hi! I'm interested in the ${couch.name} ($${couch.price})`);
     const smsLink = `sms:${PHONE_NUMBER}?body=${smsMessage}`;
 
+    // Price display with optional retail price anchoring
+    let priceHTML = '';
+    if (couch.retailPrice && couch.retailPrice > couch.price) {
+        const savings = couch.retailPrice - couch.price;
+        priceHTML = `
+            <div class="couch-pricing">
+                <span class="retail-price">Retail: $${couch.retailPrice}</span>
+                <span class="couch-price">$${couch.price}</span>
+                <span class="savings-badge">Save $${savings}</span>
+            </div>
+        `;
+    } else {
+        priceHTML = `<p class="couch-price">$${couch.price}</p>`;
+    }
+
+    // Scarcity badge
+    const scarcityHTML = couch.quantity && couch.quantity <= 2
+        ? `<span class="scarcity-badge">Only ${couch.quantity} available!</span>`
+        : '';
+
     article.innerHTML = `
         <div class="couch-image">
             <img src="${couch.image}" alt="${couch.name}" onerror="this.src='images/placeholder.jpg'">
             <span class="availability-badge available">Ready for Delivery</span>
+            ${scarcityHTML}
         </div>
         <div class="couch-details">
             <h3>${couch.name}</h3>
-            <p class="couch-price">$${couch.price}</p>
+            ${priceHTML}
             <p class="couch-dimensions">📐 ${couch.dimensions}</p>
             <p class="couch-delivery">🚚 ${couch.deliveryNote}</p>
             <a href="${smsLink}" class="btn btn-reserve">Text to Reserve</a>
