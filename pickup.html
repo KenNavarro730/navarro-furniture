@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get rid of your unwanted couch in Philadelphia. We pick up eligible furniture for free. Text us photos for a quick response.">
+    <title>Free Couch Pickup | Navarro Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Navarro<span>Furniture</span></a>
+
+            <div class="nav-links">
+                <a href="#pickup">Request Pickup</a>
+                <a href="#eligibility">What We Take</a>
+                <a href="#service-area">Service Area</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="nav-contact">
+                <span class="response-badge">⚡ Fast Response</span>
+                <a href="sms:267-265-9284?body=Hi! I have a couch I'd like picked up." class="btn btn-primary nav-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Text Photos
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#pickup">Request Pickup</a>
+            <a href="#eligibility">What We Take</a>
+            <a href="#service-area">Service Area</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="sms:267-265-9284?body=Hi! I have a couch I'd like picked up."
+                class="btn btn-primary mobile-cta">Text Photos</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero hero-pickup">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>We Pick Up<br><span class="highlight">Eligible Couches</span></h1>
+                <p class="hero-subtitle">Have a couch you need gone? We pick up quality furniture for free in the
+                    Philadelphia area. Same-week scheduling available.</p>
+                <div class="hero-ctas">
+                    <a href="sms:267-265-9284?body=Hi! I have a couch I'd like picked up. Here are some photos:"
+                        class="btn btn-primary btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Text Photos to 267-265-9284
+                    </a>
+                    <a href="#eligibility" class="btn btn-secondary">See What We Take</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon">🆓</span>
+                        <span>Free Pickup</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">📅</span>
+                        <span>Same Week</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">💪</span>
+                        <span>We Do the Heavy Lifting</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/loading-truck.jpg" alt="Loading couch into truck for pickup" id="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- How Pickup Works -->
+    <section class="how-it-works" id="pickup">
+        <div class="container">
+            <h2 class="section-title">How Pickup Works</h2>
+            <p class="section-subtitle">Getting rid of your couch is easy</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📸</div>
+                    <h3>Text Us Photos</h3>
+                    <p>Send a few photos of your couch to 267-265-9284. Include any damage or stains.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">✅</div>
+                    <h3>Get Approved</h3>
+                    <p>We'll respond quickly to let you know if it qualifies for free pickup (or a cash offer!)</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🚚</div>
+                    <h3>We Pick It Up</h3>
+                    <p>Schedule a time that works for you. We bring blankets, straps, and protect your floors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pickup Options -->
+    <section class="pickup-options-section">
+        <div class="container">
+            <h2 class="section-title">Pickup Options</h2>
+            <p class="section-subtitle">Three ways we can help</p>
+
+            <div class="pickup-options">
+                <div class="pickup-option">
+                    <div class="option-icon">🆓</div>
+                    <h3>Free Pickup</h3>
+                    <p>For eligible pieces in good condition that we can resell after cleaning</p>
+                </div>
+                <div class="pickup-option featured">
+                    <div class="option-icon">💰</div>
+                    <h3>Cash Offer</h3>
+                    <p>For high-demand designer pieces, we may offer cash on the spot</p>
+                </div>
+                <div class="pickup-option">
+                    <div class="option-icon">🤝</div>
+                    <h3>Donation Help</h3>
+                    <p>If it's not for us, we can help connect you with local charities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section class="eligibility-section" id="eligibility">
+        <div class="container">
+            <h2 class="section-title">What We Take (and Don't Take)</h2>
+            <p class="section-subtitle">Be upfront and we'll give you a quick answer</p>
+
+            <div class="pickup-criteria">
+                <div class="criteria-card accept">
+                    <h3>✅ What We Take</h3>
+                    <ul>
+                        <li>Sofas, sectionals, loveseats in good condition</li>
+                        <li>Clean upholstery (stains we can treat are OK)</li>
+                        <li>Sturdy frames with no major damage</li>
+                        <li>Pet-friendly homes (we deep clean everything)</li>
+                        <li>Leather, fabric, velvet, microfiber</li>
+                        <li>Mid-century, modern, traditional styles</li>
+                        <li>Designer brands (West Elm, CB2, Pottery Barn, etc.)</li>
+                    </ul>
+                </div>
+                <div class="criteria-card reject">
+                    <h3>❌ What We Don't Take</h3>
+                    <ul>
+                        <li>Bed bugs or any pest infestation</li>
+                        <li>Heavy smoke odor (cigarette/fire damage)</li>
+                        <li>Major structural damage or broken frames</li>
+                        <li>Severe water damage or mold</li>
+                        <li>Ripped/torn upholstery beyond repair</li>
+                        <li>Sleeper sofas with broken mechanisms</li>
+                        <li>Heavily soiled or unsanitary pieces</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="eligibility-note">
+                <p><strong>Not sure if your couch qualifies?</strong> Just text us photos — we'll give you an honest
+                    answer quickly. No pressure, no judgment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text CTA Section -->
+    <section class="text-cta-section">
+        <div class="container">
+            <div class="text-cta-content">
+                <div class="text-cta-info">
+                    <h2>📸 Text Us Photos for a Quick Response</h2>
+                    <p>The fastest way to get an answer is to text us a few photos. Include:</p>
+                    <ul>
+                        <li>📷 Full front view of the couch</li>
+                        <li>📷 Any stains, tears, or damage</li>
+                        <li>📷 Brand tag (if visible)</li>
+                        <li>📍 Your zip code</li>
+                    </ul>
+                    <a href="sms:267-265-9284?body=Hi! I have a couch I'd like picked up. Here are some photos:%0A%0AZip code: "
+                        class="btn btn-primary btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Text Photos to 267-265-9284
+                    </a>
+                </div>
+                <div class="text-cta-response">
+                    <h3>What Happens Next</h3>
+                    <div class="response-steps">
+                        <div class="response-step">
+                            <span class="step-num">1</span>
+                            <div>
+                                <strong>Quick Response</strong>
+                                <p>We respond within a few hours during business hours (9 AM – 5 PM)</p>
+                            </div>
+                        </div>
+                        <div class="response-step">
+                            <span class="step-num">2</span>
+                            <div>
+                                <strong>Schedule Pickup</strong>
+                                <p>If eligible, we'll schedule pickup (usually Wed – Sat)</p>
+                            </div>
+                        </div>
+                        <div class="response-step">
+                            <span class="step-num">3</span>
+                            <div>
+                                <strong>We Handle Everything</strong>
+                                <p>We bring blankets, straps, and protect your floors and walls</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="service-area" id="service-area">
+        <div class="container">
+            <h2 class="section-title">Pickup Service Area</h2>
+            <p class="section-subtitle">We serve Philadelphia and surrounding areas</p>
+
+            <div class="service-grid service-grid-compact">
+                <div class="service-info-card">
+                    <h3>📍 Areas We Serve</h3>
+                    <div class="area-list">
+                        <div class="area-column">
+                            <h4>Philadelphia</h4>
+                            <ul>
+                                <li>Center City</li>
+                                <li>University City</li>
+                                <li>Fishtown / Northern Liberties</li>
+                                <li>South Philly</li>
+                                <li>Manayunk / Roxborough</li>
+                                <li>Germantown / Mt. Airy</li>
+                            </ul>
+                        </div>
+                        <div class="area-column">
+                            <h4>Suburbs</h4>
+                            <ul>
+                                <li>Main Line (Ardmore, Bryn Mawr)</li>
+                                <li>King of Prussia</li>
+                                <li>Conshohocken</li>
+                                <li>Media / Delaware County</li>
+                                <li>Cherry Hill, NJ</li>
+                                <li>And more — just ask!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-info-card">
+                    <h3>📅 Pickup Scheduling</h3>
+                    <div class="schedule-info">
+                        <p><strong>Pickup Days:</strong> Wednesday – Saturday (typical)</p>
+                        <p><strong>Hours:</strong> 9 AM – 5 PM</p>
+                        <p><strong>Turnaround:</strong> Usually within the same week</p>
+                        <p class="schedule-note">Need a specific day? Just let us know — we're flexible!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/ken-photo.jpg" alt="Ken from Navarro Furniture" id="about-photo">
+                    <div class="about-badge">
+                        <span class="badge-icon">🎓</span>
+                        <span>Penn State '25</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="about-tag">Who Picks Up Your Couch?</span>
+                    <h2>Hi, I'm <span class="highlight">Ken</span></h2>
+                    <p class="about-intro">I started Navarro Furniture to give quality couches a second life. When you
+                        schedule a pickup, you're dealing directly with me — not a random hauling company.</p>
+                    <p class="about-body">I personally inspect every piece, and I'll be upfront about whether it's a
+                        fit. If it's not for us, I'm happy to point you toward other options like Habitat for Humanity
+                        or bulk trash scheduling.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">✋</span>
+                            <span>I Do the Pickup Myself</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">📍</span>
+                            <span>Philadelphia Local</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💬</span>
+                            <span>Text Me Directly</span>
+                        </div>
+                    </div>
+                    <a href="sms:267-265-9284?body=Hi Ken! I have a couch I'd like to get rid of."
+                        class="btn btn-primary about-cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Text Ken About Pickup
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Pickup FAQs</h2>
+            <p class="section-subtitle">Common questions about our pickup service</p>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is pickup really free?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — for eligible pieces in good, resellable condition. We clean and resell the couches we
+                            pick up, so it's a win-win. If your couch is a high-demand piece (designer brand, excellent
+                            condition), we may even offer you cash!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you take couches from homes with pets?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Pet hair and minor odor are no problem — we deep-clean every couch with
+                            extraction equipment before reselling. We just can't accept pieces with flea or pest
+                            infestations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if my couch has stains?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most stains are fine — we have professional cleaning equipment that handles common stains.
+                            Just be honest in your photos so we can assess. We can't take pieces with severe or
+                            unsanitary staining.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you do curbside pickup or come inside?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We come inside and do all the heavy lifting! We'll carefully navigate stairs, hallways, and
+                            tight corners. We bring blankets to protect walls and floors.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if you can't take my couch?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No problem! We'll let you know quickly and can suggest alternatives like Habitat for Humanity
+                            ReStore, Salvation Army, or Philadelphia's bulk trash pickup service. We're here to help
+                            either way.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How quickly can you pick up?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Usually within the same week! We typically schedule pickups for Wednesday through Saturday.
+                            If you need it out urgently, let us know and we'll do our best to accommodate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta final-cta-pickup">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Rid of Your Couch?</h2>
+                <p>Text us a few photos and your zip code. We'll respond quickly with an answer.</p>
+                <div class="cta-buttons">
+                    <a href="sms:267-265-9284?body=Hi! I have a couch I'd like picked up. Here are some photos:"
+                        class="btn btn-primary btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Text Photos to 267-265-9284
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">Navarro<span>Furniture</span></a>
+                    <p>Quality pre-owned couches, professionally cleaned and delivered in the Philadelphia area.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <a href="tel:267-265-9284" class="footer-phone">📞 267-265-9284</a>
+                    <a href="sms:267-265-9284" class="footer-text">💬 Text Us Anytime</a>
+                    <p class="footer-hours">Available 9 AM – 5 PM, 7 days a week</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/buy.html">Looking to Buy?</a>
+                    <a href="#eligibility">What We Take</a>
+                    <a href="#about">About Ken</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Navarro Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
