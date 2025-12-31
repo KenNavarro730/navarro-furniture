@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Navbar scroll effect
     initNavbarEffect();
+
+    // Mobile navigation
+    initMobileNav();
+
+    // FAQ accordion
+    initFaqAccordion();
 });
 
 // Load and Render Inventory from inventory.js
@@ -111,6 +117,14 @@ function initSmoothScroll() {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+
+                // Close mobile nav if open
+                const mobileNav = document.getElementById('mobile-nav');
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                if (mobileNav && mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                }
             }
         });
     });
@@ -119,7 +133,7 @@ function initSmoothScroll() {
 // Scroll Animations
 function initScrollAnimations() {
     const animatedElements = document.querySelectorAll(
-        '.step-card, .couch-card:not(.scroll-animate), .sanitation-step, .before-after-card, .auth-image, .delivery-card'
+        '.step-card, .couch-card:not(.scroll-animate), .sanitation-step, .before-after-card, .auth-image, .delivery-card, .service-card, .pickup-option, .criteria-card, .service-info-card, .faq-item'
     );
 
     // Add scroll-animate class to elements that don't have it
@@ -163,6 +177,48 @@ function initNavbarEffect() {
         }
 
         lastScroll = currentScroll;
+    });
+}
+
+// Mobile Navigation Toggle
+function initMobileNav() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (!mobileMenuBtn || !mobileNav) return;
+
+    mobileMenuBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!mobileNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileNav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+        }
+    });
+}
+
+// FAQ Accordion
+function initFaqAccordion() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // Close other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+        });
     });
 }
 
