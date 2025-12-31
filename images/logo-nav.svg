@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40" fill="none">
+  <defs>
+    <style>
+      .char { stroke:#2D3436; fill:none; }
+      .text { fill:#2D3436; font-family: Inter, system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Couch Icon (scaled down) -->
+  <g transform="translate(2,4) scale(0.24)">
+    <!-- Couch silhouette -->
+    <g class="char" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Arms -->
+      <rect x="30" y="72" width="14" height="44" rx="8"/>
+      <rect x="116" y="72" width="14" height="44" rx="8"/>
+      <!-- Backrest -->
+      <rect x="44" y="56" width="72" height="28" rx="12"/>
+      <!-- Base/seat -->
+      <rect x="34" y="86" width="96" height="30" rx="12"/>
+      <!-- Cushion separators -->
+      <path d="M66 86V116"/>
+      <path d="M98 86V116"/>
+    </g>
+    <!-- Sparkle -->
+    <path d="M0 -7 L2.3 -2.3 L7 0 L2.3 2.3 L0 7 L-2.3 2.3 L-7 0 L-2.3 -2.3 Z"
+          transform="translate(108 46)"
+          fill="#E17055"/>
+  </g>
+
+  <!-- Text -->
+  <g class="text">
+    <text x="48" y="20" font-size="16" font-weight="800" letter-spacing="0.02em">NAVARRO</text>
+    <text x="48" y="34" font-size="9" font-weight="600" letter-spacing="0.2em" opacity="0.85">FURNITURE</text>
+  </g>
+</svg>

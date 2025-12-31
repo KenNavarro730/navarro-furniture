@@ -232,9 +232,13 @@ h3 {
 }
 
 .logo {
-    font-size: var(--font-size-xl);
-    font-weight: 800;
-    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .logo span {
