@@ -2075,3 +2075,37 @@ h3 {
 .final-cta-pickup .cta-content>p {
     color: rgba(0, 0, 0, 0.7);
 }
+
+/* Quick Check Disqualifiers */
+.quick-check {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.quick-check>p:first-child {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+}
+
+.disqualifiers {
+    list-style: none;
+    margin-bottom: var(--space-sm);
+}
+
+.disqualifiers li {
+    padding: var(--space-xs) 0;
+    color: #991b1b;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.check-note {
+    color: var(--color-trust-dark);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin: 0;
+}
