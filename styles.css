@@ -1606,6 +1606,12 @@ h3 {
     font-size: var(--font-size-sm);
 }
 
+/* Footer logo needs to be white on dark background */
+.footer .logo-img {
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
 /* ===================================
    Responsive Styles
    =================================== */
