@@ -243,14 +243,15 @@ h3 {
 
 .nav-links {
     display: flex;
-    gap: var(--space-lg);
+    gap: var(--space-md);
 }
 
 .nav-links a {
     font-weight: 500;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     color: var(--color-text-muted);
     transition: color var(--transition-fast);
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -260,22 +261,25 @@ h3 {
 .nav-contact {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-sm);
+    flex-shrink: 0;
 }
 
 .nav-cta {
-    padding: var(--space-sm) var(--space-lg);
-    font-size: var(--font-size-sm);
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
 }
 
 .response-badge {
     background: linear-gradient(135deg, var(--color-trust-light) 0%, var(--color-trust) 100%);
     color: white;
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-full);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 600;
     animation: pulse 2s infinite;
+    white-space: nowrap;
 }
 
 @keyframes pulse {
@@ -358,7 +362,8 @@ h3 {
     margin-top: var(--space-md);
 }
 
-@media (max-width: 1100px) {
+/* Hide full nav on smaller screens - switch to mobile at 1250px */
+@media (max-width: 1250px) {
     .nav-links {
         display: none;
     }
